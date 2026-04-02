@@ -90,7 +90,7 @@ $$\beta_{\text{filtered}}(t) = \alpha \cdot \beta(t) + (1 - \alpha) \cdot \beta_
 <img width="180" height="42" alt="h1_logo" src="https://github.com/user-attachments/assets/eb1de18b-f07f-4e9f-9c5c-64d17dc35156" />
 
 이 연구는 [한국학술지인용색인(KCI) 등재지](https://www.kci.go.kr/)에 게재되었습니다.  
-자세한 논문 정보는 [KCI 포털](논문_링크_URL)에서 확인하실 수 있습니다.
+자세한 논문 정보는 [KCI 포털](https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003322677)에서 확인하실 수 있습니다.
 
 ---
 
