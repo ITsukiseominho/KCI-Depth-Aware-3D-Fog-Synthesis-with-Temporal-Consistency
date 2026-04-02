@@ -189,7 +189,7 @@ This research has surpassed the limitations of existing fog synthesis technology
 <img width="180" height="42" alt="h1_logo" src="https://github.com/user-attachments/assets/eb1de18b-f07f-4e9f-9c5c-64d17dc35156" />
 
 This research has been published in a [Korea Citation Index (KCI) registered journal](https://www.kci.go.kr/).  
-Detailed paper information can be found on the [KCI Portal](논문_링크_URL).
+Detailed paper information can be found on the [KCI Portal](https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003322677).
 
 ---
 
