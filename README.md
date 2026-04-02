@@ -1,3 +1,100 @@
+# Depth-Aware 3D Fog Synthesis with Temporal Consistency
+
+[![KCI](https://img.shields.io/badge/KCI-Registered-blue)](https://www.kci.go.kr/)
+
+> Depth-Aware 3D Fog Synthesis with Temporal Consistency  
+> First Authors: Minho Seo, Jungmin Park (Department of Computer Engineering, Korea National University of Transportation)  
+> Corresponding Author: Dat Ngo (Department of Computer Engineering, Korea National University of Transportation)
+
+This research was conducted for submission to the Korea Citation Index (KCI), mathematically analyzing the physical limitations of 2D-based fog synthesis used in conventional digital image processing and proposing a 3D heterogeneous fog generation algorithm to overcome them.
+
+---
+
+## 1. Research Background and Limitations of Existing Method A
+
+Implementing realistic weather effects in digital environments is a crucial element in autonomous driving simulations and game engines. However, the conventional fog synthesis method (hereinafter referred to as Method A) has the following critical flaws.
+
+### 1. Lack of Volumetric Appearance
+Existing Method A uses a Homogeneous Fog Model that overlays fog of uniform density across the entire screen. This approach is like simply placing a transparent gray layer over an image, failing to reproduce the physical scattering phenomenon according to the distance between the observer and objects.
+
+### 2. Temporal Inconsistency
+When applying fog to videos, independently generated noise for each frame causes flickering of fog on the screen. This significantly undermines visual stability and is the main culprit that breaks immersion in real-time rendering environments.
+
+### 3. Computational Complexity Inefficiency
+When increasing the size of kernel filters in the spatial domain to express high-quality fog, computational load increases exponentially, making real-time processing impossible.
+
+---
+
+## 2. Mathematical Proof of the Proposed Algorithm
+<img width="1197" height="226" alt="screenshot 2026-01-12 170810" src="https://github.com/user-attachments/assets/df419188-f9d0-4516-8ab5-45eb5fde1d4a" />
+
+https://github.com/user-attachments/assets/e940ebfa-6fb9-4ad6-8c08-0bbdcf575ba1
+
+As shown in the image above, this research spatially extends atmospheric scattering laws to achieve superior realism compared to existing methods.
+
+### (1) Heterogeneous 3D Transmittance Model Design
+
+The basis of fog synthesis is grounded in Koschmieder's law.
+
+$$I(x) = J(x)t(x) + A(1 - t(x))$$
+
+While existing Method A simply used a fixed scattering coefficient $\beta$ as follows,
+
+$$t(x) = \exp(-\beta \cdot d(x))$$
+
+this research designed $\beta$ as a function $\beta(s)$ that dynamically changes according to spatial coordinates $(x, y, z)$ and time $t$.
+
+Formulating how fog density accumulates between the observer and the object at distance $d(x)$ yields:
+
+$$t(x) = \exp\left( -\int_0^{d(x)} \beta(s) \, ds \right)$$
+
+Through this integral model, we mathematically and perfectly reproduced actual atmospheric phenomena where fog clusters in specific areas or disperses. This is a core element that physically proves the depth and volumetric qualities that existing Method A cannot provide.
+
+---
+
+## 3. Technological Innovation and Algorithm Optimization
+
+### (1) Temporal Filtering
+
+The second core of this research is a filtering design that ensures continuity between frames. We introduced a formula that linearly combines the current frame's fog density with information from the previous frame to ensure smooth fog flow.
+
+$$\beta_{\text{filtered}}(t) = \alpha \cdot \beta(t) + (1 - \alpha) \cdot \beta_{\text{filtered}}(t-1)$$
+
+By optimizing the $\alpha$ value, we finely control the fog's movement speed and density changes. Through this, we successfully and dramatically eliminated the inter-frame flickering phenomenon, which was the biggest weakness of existing Method A.
+
+### (2) Efficient Computation: $O(N^2 \log N)$ Implementation
+
+This algorithm also differs fundamentally in terms of performance.
+
+- **Existing Method A (Convolution-based)**: Has complexity of $O(N^2 K^2)$ as filter size $K$ increases, making high-resolution processing difficult.
+- **Proposed Method (FFT-based)**: Applied Fast Fourier Transform (FFT)-based spectrum synthesis technique that performs operations in the frequency domain. This method maintains a constant time complexity of $O(N^2 \log N)$ regardless of fog particle size or complexity.
+
+Thanks to this optimization, despite performing complex 3D operations, this algorithm achieves overwhelming speed advantages in real-time rendering systems.
+
+---
+
+## 4. Conclusions and Expected Impact
+
+This research has surpassed the limitations of existing fog synthesis technology through mathematical modeling and algorithm optimization.
+
+- **Realistic Visualization**: Utilizes depth map information to provide volumetric quality like actual fog.
+- **Stable Video**: Provides natural results without flickering even in videos through temporal filtering.
+- **High Applicability**: Presents an optimized solution for fields requiring high visual stability and computational efficiency, such as adverse weather data augmentation for autonomous driving AI training, atmospheric effects in 3D game engines, and disaster response simulations.
+
+---
+
+**Paper Information**
+
+<img width="180" height="42" alt="h1_logo" src="https://github.com/user-attachments/assets/eb1de18b-f07f-4e9f-9c5c-64d17dc35156" />
+
+This research has been published in a [Korea Citation Index (KCI) registered journal](https://www.kci.go.kr/).  
+Detailed paper information can be found on the [KCI Portal](https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003322677).
+
+---
+
+© 2026 Minho Seo. All rights reserved. This research was conducted as a research output of the Department of Computer Engineering, Korea National University of Transportation.
+commit
+
 # 깊이 기반 3D 안개 합성과 시간적 일관성 증명
 
 [![KCI](https://img.shields.io/badge/KCI-등재지-blue)](https://www.kci.go.kr/)
@@ -98,100 +195,3 @@ $$\beta_{\text{filtered}}(t) = \alpha \cdot \beta(t) + (1 - \alpha) \cdot \beta_
 
 ---
 ---
-
-# Depth-Aware 3D Fog Synthesis with Temporal Consistency
-
-[![KCI](https://img.shields.io/badge/KCI-Registered-blue)](https://www.kci.go.kr/)
-
-> Depth-Aware 3D Fog Synthesis with Temporal Consistency  
-> First Authors: Minho Seo, Jungmin Park (Department of Computer Engineering, Korea National University of Transportation)  
-> Corresponding Author: Dat Ngo (Department of Computer Engineering, Korea National University of Transportation)
-
-This research was conducted for submission to the Korea Citation Index (KCI), mathematically analyzing the physical limitations of 2D-based fog synthesis used in conventional digital image processing and proposing a 3D heterogeneous fog generation algorithm to overcome them.
-
----
-
-## 1. Research Background and Limitations of Existing Method A
-
-Implementing realistic weather effects in digital environments is a crucial element in autonomous driving simulations and game engines. However, the conventional fog synthesis method (hereinafter referred to as Method A) has the following critical flaws.
-
-### 1. Lack of Volumetric Appearance
-Existing Method A uses a Homogeneous Fog Model that overlays fog of uniform density across the entire screen. This approach is like simply placing a transparent gray layer over an image, failing to reproduce the physical scattering phenomenon according to the distance between the observer and objects.
-
-### 2. Temporal Inconsistency
-When applying fog to videos, independently generated noise for each frame causes flickering of fog on the screen. This significantly undermines visual stability and is the main culprit that breaks immersion in real-time rendering environments.
-
-### 3. Computational Complexity Inefficiency
-When increasing the size of kernel filters in the spatial domain to express high-quality fog, computational load increases exponentially, making real-time processing impossible.
-
----
-
-## 2. Mathematical Proof of the Proposed Algorithm
-<img width="1197" height="226" alt="screenshot 2026-01-12 170810" src="https://github.com/user-attachments/assets/df419188-f9d0-4516-8ab5-45eb5fde1d4a" />
-
-https://github.com/user-attachments/assets/e940ebfa-6fb9-4ad6-8c08-0bbdcf575ba1
-
-As shown in the image above, this research spatially extends atmospheric scattering laws to achieve superior realism compared to existing methods.
-
-### (1) Heterogeneous 3D Transmittance Model Design
-
-The basis of fog synthesis is grounded in Koschmieder's law.
-
-$$I(x) = J(x)t(x) + A(1 - t(x))$$
-
-While existing Method A simply used a fixed scattering coefficient $\beta$ as follows,
-
-$$t(x) = \exp(-\beta \cdot d(x))$$
-
-this research designed $\beta$ as a function $\beta(s)$ that dynamically changes according to spatial coordinates $(x, y, z)$ and time $t$.
-
-Formulating how fog density accumulates between the observer and the object at distance $d(x)$ yields:
-
-$$t(x) = \exp\left( -\int_0^{d(x)} \beta(s) \, ds \right)$$
-
-Through this integral model, we mathematically and perfectly reproduced actual atmospheric phenomena where fog clusters in specific areas or disperses. This is a core element that physically proves the depth and volumetric qualities that existing Method A cannot provide.
-
----
-
-## 3. Technological Innovation and Algorithm Optimization
-
-### (1) Temporal Filtering
-
-The second core of this research is a filtering design that ensures continuity between frames. We introduced a formula that linearly combines the current frame's fog density with information from the previous frame to ensure smooth fog flow.
-
-$$\beta_{\text{filtered}}(t) = \alpha \cdot \beta(t) + (1 - \alpha) \cdot \beta_{\text{filtered}}(t-1)$$
-
-By optimizing the $\alpha$ value, we finely control the fog's movement speed and density changes. Through this, we successfully and dramatically eliminated the inter-frame flickering phenomenon, which was the biggest weakness of existing Method A.
-
-### (2) Efficient Computation: $O(N^2 \log N)$ Implementation
-
-This algorithm also differs fundamentally in terms of performance.
-
-- **Existing Method A (Convolution-based)**: Has complexity of $O(N^2 K^2)$ as filter size $K$ increases, making high-resolution processing difficult.
-- **Proposed Method (FFT-based)**: Applied Fast Fourier Transform (FFT)-based spectrum synthesis technique that performs operations in the frequency domain. This method maintains a constant time complexity of $O(N^2 \log N)$ regardless of fog particle size or complexity.
-
-Thanks to this optimization, despite performing complex 3D operations, this algorithm achieves overwhelming speed advantages in real-time rendering systems.
-
----
-
-## 4. Conclusions and Expected Impact
-
-This research has surpassed the limitations of existing fog synthesis technology through mathematical modeling and algorithm optimization.
-
-- **Realistic Visualization**: Utilizes depth map information to provide volumetric quality like actual fog.
-- **Stable Video**: Provides natural results without flickering even in videos through temporal filtering.
-- **High Applicability**: Presents an optimized solution for fields requiring high visual stability and computational efficiency, such as adverse weather data augmentation for autonomous driving AI training, atmospheric effects in 3D game engines, and disaster response simulations.
-
----
-
-**Paper Information**
-
-<img width="180" height="42" alt="h1_logo" src="https://github.com/user-attachments/assets/eb1de18b-f07f-4e9f-9c5c-64d17dc35156" />
-
-This research has been published in a [Korea Citation Index (KCI) registered journal](https://www.kci.go.kr/).  
-Detailed paper information can be found on the [KCI Portal](https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003322677).
-
----
-
-© 2026 Minho Seo. All rights reserved. This research was conducted as a research output of the Department of Computer Engineering, Korea National University of Transportation.
-commit
