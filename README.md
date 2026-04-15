@@ -94,7 +94,7 @@ Detailed paper information can be found on the [KCI Portal](https://www.kci.go.k
 © 2026 Minho Seo. All rights reserved. This research was conducted as a research output of the Department of Computer Engineering, Korea National University of Transportation.
 commit
 
-# 깊이 기반 3D 안개 합성과 시간적 일관성 증명
+# [KCI] 깊이 기반 3D 안개 합성과 시간적 일관성 증명
 
 [![KCI](https://img.shields.io/badge/KCI-등재지-blue)](https://www.kci.go.kr/)  [![Read Paper](https://img.shields.io/badge/본문-읽기-blue?style=flat-square&logo=read-the-docs&logoColor=white)](./KCI_FI003322677%20(2).pdf)
 
