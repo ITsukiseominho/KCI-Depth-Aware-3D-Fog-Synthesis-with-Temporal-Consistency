@@ -8,7 +8,51 @@
 This research was conducted for submission to the Korea Citation Index (KCI), mathematically analyzing the physical limitations of 2D-based fog synthesis used in conventional digital image processing and proposing a 3D heterogeneous fog generation algorithm to overcome them.
 
 ---
+### 📊 시각적 분석 결과 (Visual Analysis Results)
 
+<table>
+  <tr>
+    <td align="center">
+      <img src="JOU.png" width="320" alt="Comparison Result">
+      <br>
+      <em></em>
+    </td>
+    <td align="center">
+      <img src="JOU1.jpg" width="320" alt="Scene Image 1">
+      <br>
+      <em></em>
+    </td>
+    <td align="center">
+      <img src="JOU2.jpg" width="320" alt="Depth Map">
+      <br>
+      <em></em>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="JOU3.jpg" width="320" alt="Segmentation 1">
+      <br>
+      <em></em>
+    </td>
+    <td align="center">
+      <img src="JOU4.jpg" width="320" alt="Scene Image 2">
+      <br>
+      <em></em>
+    </td>
+    <td align="center">
+      <img src="JOU5.png" width="320" alt="Segmentation 2">
+      <br>
+      <em></em>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="3" align="center">
+      <img src="JOU6.png" width="320" alt="CARLA Segmentation Channels">
+      <br>
+      <em></em>
+    </td>
+  </tr>
+</table>
 ## 1. Research Background and Limitations of Existing Method A
 
 Implementing realistic weather effects in digital environments is a crucial element in autonomous driving simulations and game engines. However, the conventional fog synthesis method (hereinafter referred to as Method A) has the following critical flaws.
