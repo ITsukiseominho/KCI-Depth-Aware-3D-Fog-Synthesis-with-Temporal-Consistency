@@ -8,7 +8,6 @@
 This research was conducted for submission to the Korea Citation Index (KCI), mathematically analyzing the physical limitations of 2D-based fog synthesis used in conventional digital image processing and proposing a 3D heterogeneous fog generation algorithm to overcome them.
 
 ---
-### 📊 시각적 분석 결과 (Visual Analysis Results)
 
 <table>
   <tr>
