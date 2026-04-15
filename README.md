@@ -149,7 +149,49 @@ commit
 본 연구는 KCI(한국학술지인용색인) 투고를 목적으로 수행되었으며, 기존 디지털 영상 처리에서 사용되던 2D 기반 안개 합성의 물리적 한계를 수학적으로 분석하고 이를 극복할 수 있는 3D 비균질 안개 생성 알고리즘을 제안합니다.
 
 ---
-
+<table>
+  <tr>
+    <td align="center">
+      <img src="JOU.png" width="320" alt="Comparison Result">
+      <br>
+      <em></em>
+    </td>
+    <td align="center">
+      <img src="JOU1.png" width="320" alt="Scene Image 1">
+      <br>
+      <em></em>
+    </td>
+    <td align="center">
+      <img src="JOU2.png" width="320" alt="Depth Map">
+      <br>
+      <em></em>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="JOU3.png" width="320" alt="Segmentation 1">
+      <br>
+      <em></em>
+    </td>
+    <td align="center">
+      <img src="JOU4.png" width="320" alt="Scene Image 2">
+      <br>
+      <em></em>
+    </td>
+    <td align="center">
+      <img src="JOU5.png" width="320" alt="Segmentation 2">
+      <br>
+      <em></em>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="1" align="center">
+      <img src="JOU6.png" width="320" alt="CARLA Segmentation Channels">
+      <br>
+      <em></em>
+    </td>
+  </tr>
+</table>
 ## 1. 연구 배경 및 기존 기법(Method A)의 한계 분석
 
 디지털 환경에서 사실적인 기상 효과를 구현하는 것은 자율주행 시뮬레이션이나 게임 엔진에서 매우 중요한 요소입니다. 하지만 기존에 널리 쓰이던 일반적인 안개 합성 방식(이하 Method A)은 다음과 같은 치명적인 결함을 가지고 있습니다.
