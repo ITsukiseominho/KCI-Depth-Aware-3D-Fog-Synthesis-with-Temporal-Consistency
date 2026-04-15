@@ -96,7 +96,7 @@ commit
 
 # 깊이 기반 3D 안개 합성과 시간적 일관성 증명
 
-[![KCI](https://img.shields.io/badge/KCI-등재지-blue)](https://www.kci.go.kr/)
+[![KCI](https://img.shields.io/badge/KCI-등재지-blue)](https://www.kci.go.kr/)  [![Read Paper](https://img.shields.io/badge/본문-읽기-blue?style=flat-square&logo=read-the-docs&logoColor=white)](./KCI_FI003322677%20(2).pdf)
 
 > Depth-Aware 3D Fog Synthesis with Temporal Consistency  
 > 제1저자: 서민호, 박정민 <br>
