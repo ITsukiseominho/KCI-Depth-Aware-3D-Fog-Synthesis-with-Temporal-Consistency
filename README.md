@@ -17,24 +17,24 @@ This research was conducted for submission to the Korea Citation Index (KCI), ma
       <em></em>
     </td>
     <td align="center">
-      <img src="JOU1.jpg" width="320" alt="Scene Image 1">
+      <img src="JOU1.png" width="320" alt="Scene Image 1">
       <br>
       <em></em>
     </td>
     <td align="center">
-      <img src="JOU2.jpg" width="320" alt="Depth Map">
+      <img src="JOU2.png" width="320" alt="Depth Map">
       <br>
       <em></em>
     </td>
   </tr>
   <tr>
     <td align="center">
-      <img src="JOU3.jpg" width="320" alt="Segmentation 1">
+      <img src="JOU3.png" width="320" alt="Segmentation 1">
       <br>
       <em></em>
     </td>
     <td align="center">
-      <img src="JOU4.jpg" width="320" alt="Scene Image 2">
+      <img src="JOU4.png" width="320" alt="Scene Image 2">
       <br>
       <em></em>
     </td>
