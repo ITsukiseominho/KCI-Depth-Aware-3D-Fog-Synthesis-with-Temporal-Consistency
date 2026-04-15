@@ -1,6 +1,6 @@
 # Depth-Aware 3D Fog Synthesis with Temporal Consistency
 
-[![KCI](https://img.shields.io/badge/KCI-Registered-blue)](https://www.kci.go.kr/)  [![Read Paper](https://img.shields.io/badge/Read-papaer-blue?style=flat-square&logo=read-the-docs&logoColor=white)](./KCI_FI003322677%20(2).pdf)
+[![KCI](https://img.shields.io/badge/KCI-Registered-blue)]([https://www.kci.go.kr/](https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003322677))  [![Read Paper](https://img.shields.io/badge/Read-papaer-blue?style=flat-square&logo=read-the-docs&logoColor=white)](./KCI_FI003322677%20(2).pdf)
 > Depth-Aware 3D Fog Synthesis with Temporal Consistency  
 > First Authors: Minho Seo, Jungmin Park (Department of Computer Engineering, Korea National University of Transportation)  
 > Corresponding Author: Dat Ngo (Department of Computer Engineering, Korea National University of Transportation)
