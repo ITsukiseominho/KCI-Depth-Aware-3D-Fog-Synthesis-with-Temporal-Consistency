@@ -46,7 +46,7 @@ This research was conducted for submission to the Korea Citation Index (KCI), ma
   </tr>
   <tr>
     <td colspan="3" align="center">
-      <img src="JOU6.png" width="320" alt="CARLA Segmentation Channels">
+      <img src="JOU6.png" width="200" alt="CARLA Segmentation Channels">
       <br>
       <em></em>
     </td>
