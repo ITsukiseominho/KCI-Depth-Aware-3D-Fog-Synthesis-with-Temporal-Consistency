@@ -4,7 +4,7 @@
 > Depth-Aware 3D Fog Synthesis with Temporal Consistency  
 > First Authors: Minho Seo, Jungmin Park (Department of Computer Engineering, Korea National University of Transportation)
 <br> Co-authors: Seong-sik Yu, Ye-eun Kim
-> Corresponding Author: Dat Ngo (Department of Computer Engineering, Korea National University of Transportation)
+> <br> Corresponding Author: Dat Ngo (Department of Computer Engineering, Korea National University of Transportation)
 
 This research was conducted for submission to the Korea Citation Index (KCI), mathematically analyzing the physical limitations of 2D-based fog synthesis used in conventional digital image processing and proposing a 3D heterogeneous fog generation algorithm to overcome them.
 
