@@ -1,4 +1,4 @@
-# Depth-Aware 3D Fog Synthesis with Temporal Consistency
+# [KCI] Depth-Aware 3D Fog Synthesis with Temporal Consistency
 
 [![KCI](https://img.shields.io/badge/KCI-Registered-blue)]([https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003322677](https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003322677))  [![Read Paper](https://img.shields.io/badge/Read-papaer-blue?style=flat-square&logo=read-the-docs&logoColor=white)](./KCI_FI003322677%20(2).pdf)
 > Depth-Aware 3D Fog Synthesis with Temporal Consistency  
